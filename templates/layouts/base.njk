@@ -14,7 +14,6 @@ title: Parcel Eleventy
     {% include 'meta.njk' %}
 
     <link rel="stylesheet" href="/_site/styles/main.scss" />
-    <script type="module" src="/_site/scripts/main.js"></script>
   </head>
   <body>
     {% include 'nav.njk' %}
@@ -22,5 +21,7 @@ title: Parcel Eleventy
     <main data-router-wrapper>
       {{ content | safe }}
     </main>
+
+    <script type="module" src="/_site/scripts/main.js"></script>
   </body>
 </html>

@@ -1,6 +1,1 @@
-console.log('thasd')
-console.log('thasd')
-console.log('thasd')
-console.log('thasd')
-
-console.log('demasiadas mujeres')
+console.log('Parcel + 11ty')
