@@ -1,3 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "yarn build"
   publish = "_dist"
+
+[dev]
+  command = "yarn serve"
+  port = 3000
+  targetPort = 1234
+  publish = "_dist"
+  autoLaunch = true

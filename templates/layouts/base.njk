@@ -1,27 +1,13 @@
----
-title: Parcel Eleventy
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="ie=edge" http-equiv="x-ua-compatible" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>{{ title }}</title>
-
-    {% include 'meta.njk' %}
-
-    <link rel="stylesheet" href="/_site/styles/main.scss" />
+    {% include 'head.njk' %}
   </head>
   <body>
-    {% include 'nav.njk' %}
-
-    <main data-router-wrapper>
+    {% include 'header.njk' %}
+    
+    <main>
       {{ content | safe }}
     </main>
-
-    <script type="module" src="/_site/scripts/main.js"></script>
   </body>
 </html>

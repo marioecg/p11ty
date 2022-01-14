@@ -1,3 +1,1 @@
-# p11ty 📦
-
-Parcel + Eleventy setup 👷‍♀️
+# p11ty
