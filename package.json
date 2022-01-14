@@ -1,25 +1,13 @@
 {
   "name": "p11ty",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "serve:eleventy": "eleventy --watch --quiet",
     "build:eleventy": "eleventy",
-    "serve:parcel": "parcel './_site/index.html' './_site/**/*.html' --dist-dir _dist",
-    "build:parcel": "parcel build './_site/index.html' './_site/**/*.html' --dist-dir _dist --no-source-maps",
+    "serve:parcel": "parcel './_site/*.html' './_site/**/*.html' --dist-dir _dist",
+    "build:parcel": "parcel build './_site/*.html' './_site/**/*.html' --dist-dir _dist --no-source-maps --no-cache",
     "clean": "rimraf _site _dist",
     "serve": "NODE_ENV=development npm-run-all --serial clean build:eleventy --parallel serve:*",
     "build": "NODE_ENV=production run-s clean build:*"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@parcel/transformer-sass": "^2.0.1",
-    "html-minifier": "^4.0.0",
-    "npm-run-all": "^4.1.5",
-    "parcel": "^2.0.1",
-    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@dogstudio/highway": "^2.2.1",
@@ -27,5 +15,13 @@
     "include-media": "^1.4.10",
     "lodash.debounce": "^4.0.8",
     "tiny-emitter": "^2.1.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@parcel/transformer-sass": "^2.0.1",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.1",
+    "rimraf": "^3.0.2"
   }
 }
